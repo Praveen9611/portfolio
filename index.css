@@ -17,10 +17,10 @@ html{
 }
 .profile{
     background-image:  linear-gradient(to right, 
-    rgba(0, 0, 0, 0.585), 
-    rgba(0, 0, 0, 0.682), 
-    rgba(0, 0, 0, 0.719), 
-    rgba(0, 0, 0, 0.625)),url(./coverimage.jpg);
+    rgba(0, 0, 0, 0.185), 
+    rgba(0, 0, 0, 0.326), 
+    rgba(0, 0, 0, 0.281), 
+    rgba(0, 0, 0, 0.241)),url(./coverimage.jpg);
     background-size: cover;
     /* width: 100vw; */
     height: 100vh;
