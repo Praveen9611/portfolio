@@ -1,0 +1,498 @@
+/* html,body {
+    font-family: 'Open Sans', sans-serif;
+} */
+
+*{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* border: solid red 2px; */
+}
+html{
+    scroll-behavior: smooth;
+}
+.name:hover{
+    color: whitesmoke;
+}
+.profile{
+    background-image:  linear-gradient(to right, 
+    rgba(0, 0, 0, 0.585), 
+    rgba(0, 0, 0, 0.682), 
+    rgba(0, 0, 0, 0.719), 
+    rgba(0, 0, 0, 0.625)),url(./coverimage.jpg);
+    background-size: cover;
+    /* width: 100vw; */
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* nav{
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+} */
+nav {
+    width: 100%;
+    transition: all 0.3s ease; /* smooth transition when style changes */
+}
+nav.scrolled {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.799);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.nav-section ul{
+    display: flex;
+    gap: 50px;
+    margin-top: 20px;
+    list-style: none;
+    letter-spacing: 1px;
+}
+.name{
+    margin-top: 20px;
+    /* color: #fc4b06; */
+    /* color: #FF4500; */
+    /* color:#9D00FF; */
+    /* color: whitesmoke; */
+    color: orange;
+    letter-spacing: 1px;
+}
+.unorderllist a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.unorderllist a:hover{
+    text-decoration: none;
+    color: orange;
+}
+
+.container{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    position: relative;
+    font-size: 25px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+.pos{
+    position: absolute;
+    top: 296px;
+    left: 71px;
+    /* border: solid red 2px; */
+}
+.photo-wrapper{
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    display: block;
+    margin-top: 190px;
+}
+.myphoto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    object-position: 80% 80% ;
+}
+.body-container{
+    display: flex;
+    justify-content: space-around;
+}
+.aboutme{
+    /* height: 100vh; */
+    /* height: 826.4px; */
+    width: 623px;
+    background: linear-gradient(135deg, #ffffff 50%, #f8f9fa 100%);
+    
+}
+.body-container{
+    padding-top: 80px;
+}
+.some{
+    border-bottom: 4px solid orange;
+    border-color: #fcac45;
+    width: 60px;
+    padding-bottom: 15px;
+}
+.headingfont{
+    height: 20px;
+    width: 555px;
+    font-size: 30px;
+    font-weight: 300;
+    
+}
+.aboutsection{
+    margin-top: 80px;
+    line-height: 5lvh;
+
+}
+
+#about-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    line-height: 1.8;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 75px;
+}
+
+#about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+/* .about-container {
+    max-width: 800px;
+    text-align: center;
+} */
+
+.my-works{
+    display: flex;
+    justify-content: center;
+
+}
+.work{
+    border-bottom: 4px solid orange;
+    border-color: #fcac45;
+    width: 60px;
+}
+.my-works-card{
+    margin-top: 20px;
+    height: 710px;
+ }
+.card{
+    width: 240px;
+    height: 240px;
+}
+.firstc,.secondc{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1vw;
+    box-shadow: 2px 2px 2px black;
+}
+/* #PORTFOLIO {
+    margin-top: 20px;
+    background-image: url(./moonwallpaper.jpg);
+    background-size: cover;          
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+} */
+#PORTFOLIO {
+    position: relative;
+    margin-top: 20px;
+    overflow: hidden; /* Important for ::before */
+    z-index: 1;
+    background-image: 
+    linear-gradient(to right, 
+      rgb(0, 0, 0), 
+      rgb(0, 0, 0), 
+      rgb(0, 0, 0), 
+      rgba(0, 0, 0, 0.981));
+      height: 600px;
+}
+
+#PORTFOLIO::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(./moonwallpaper.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    opacity: 0.7; /* Set desired opacity here */
+    z-index: -1; /* Keep background behind your content */
+   
+}
+
+
+
+.CONTACTME{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TACT{
+    display: inline-block;
+    border-bottom: 4px solid orange;
+    border-color: #fcac45;
+    width: 70px;
+    padding-bottom: 5px;
+}
+/* .Addresscontainer{
+    display: flex;
+    justify-content: space-around;
+}
+.Addressdetails{
+    display: flex;
+    justify-content: space-around;
+}
+.Address{
+    height: 200px;
+    width: 285px;
+    line-height: 1.8vw;
+}
+.contactmecontainer{
+    height: 288px;
+    width: 1170px;
+    border: solid red 2px;
+}
+#Addressdetailcontainer{
+    height: 150px;
+    width: 750px;
+    border: solid rgb(227, 235, 10) 2px;
+} */
+.contactmecontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 20px;
+    /* border: solid red 2px; */
+}
+
+.addresscontainer {
+    text-align: center;
+    margin-bottom: 40px;
+    /* border: solid black 2px; */
+}
+
+.detailscontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 800px;
+    width: 100%;
+    /* border: solid rgba(14, 241, 67, 0.54) 2px; */
+}
+
+.addheading, .details {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 10px 0;
+    /* border: solid rgb(209, 15, 15) 2px; */
+}
+
+.details p {
+    max-width: 250px;
+    text-align: center;
+    /* border: solid rgb(12, 70, 215) 2px; */
+}
+.fullmailid a {
+    margin-right: 200px;
+    text-decoration: none;
+    color: orange;
+}
+  
+.fullmailid a:hover {
+    /* Optional hover effect */
+    color: #333;
+  }
+  
+.fullnumber{
+    margin-right: 50px;
+}
+.map{
+    width: 100%;
+    height: 280px;
+}
+footer{
+    margin-top: 10ex;
+    height: 130px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.897);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.quote p{
+    color: white;
+    font-size: 17px;
+}
+/* .linkedin img{
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+}
+.github img{
+    
+} */
+.logo img{
+    height: 30px;
+    width: 30px;
+    border-radius: 8px;
+}
+.logo{
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+.card {
+    position: relative;
+    width: 200px; 
+    height: 200px; 
+  }
+  
+.bprofile {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  
+.linkb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.899;
+  }
+  
+  /* Hide the hover text initially */
+.hover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none; /* allow clicking through the text */
+  }
+  
+  /* On hover */
+.bprofile:hover .linkb {
+    filter: brightness(30%); /* darken the image instead of just background-color */
+  }
+  
+.bprofile:hover .hover-text {
+    opacity: 1;
+  }
+  
+/* Responsive design for tablet devices */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-section ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .container {
+        width: 80%;
+    }
+
+    .body-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-wrapper {
+        margin-top: 80px;
+    }
+
+    .aboutme {
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .my-works-card {
+        height: auto;
+    }
+
+    .firstc, .secondc {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 80%;
+        height: auto;
+    }
+
+    .contactmecontainer {
+        padding: 20px;
+    }
+
+    .detailscontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 480px) {
+    .pos {
+        top: 200px;
+        left: 20px;
+        text-align: center;
+    }
+
+    .pos h1 {
+        font-size: 24px;
+    }
+
+    .pos p {
+        font-size: 16px;
+    }
+
+    .photo-wrapper {
+        width: 250px;
+        height: 250px;
+    }
+
+    .headingfont {
+        font-size: 24px;
+    }
+
+    .aboutsection {
+        line-height: 1.5;
+    }
+
+    .mapcontainer iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    .quote p {
+        font-size: 16px;
+    }
+
+    footer .logo {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

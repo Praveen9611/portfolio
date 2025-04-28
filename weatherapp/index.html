@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<div class="container">
+  <h1 class="heading">Weather Checker</h1>
+
+  <div class="input-group">
+    <input type="text" id="city-input" placeholder="Enter city name">
+    <p id="city-error" class="error-text">Please enter a city name.</p>
+  </div>
+
+  <button id="get-weather-button" class="button">Get Weather</button>
+
+  <div id="weather-info" class="weather-info">
+    <h2 id="city-name">--</h2>
+    <p id="weather-condition">--</p>
+
+    <div class="icon-temp">
+      <img id="weather-icon" src="" alt="Weather Icon">
+      <p id="temperature">--</p>
+    </div>
+
+    <div class="details">
+      <p>Feels Like: <span id="feels-like">--</span></p>
+      <p>Humidity: <span id="humidity">--</span></p>
+      <p>Wind Speed: <span id="wind-speed">--</span></p>
+      <p>Pressure: <span id="pressure">--</span></p>
+    </div>
+  </div>
+
+  <p id="error-message" class="error-text">Error fetching weather. Please try again later.</p>
+</div>
+
+<script src="./index.js"></script>
+
+</body>
+</html>

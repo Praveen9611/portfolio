@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="./F.png">
+    <title>Categories - Fact Flow</title>
+    <link rel="stylesheet" href="./blog.css">
+    <style>
+        .categories-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 40px 20px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .category-card {
+            background: #fff;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .category-card p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .category-card a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .category-card a:hover {
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .categories-section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="fclogo" src="./F.png" alt="Fact Flow Logo">
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./categories.html">Categories</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="categories-section">
+            <div class="category-card">
+                <h2>Science</h2>
+                <p>Explore fascinating scientific facts, discoveries, and innovations that shape our world and beyond.</p>
+                <a href="./Science.html" class="category-card">Discover More</a>
+            </div>
+
+            <div class="category-card">
+                <h2>History</h2>
+                <p>Dive into the past with intriguing historical events, figures, and milestones that defined our civilization.</p>
+                <a href="./history.html" class="category-card">Uncover History</a>
+            </div>
+
+            <div class="category-card">
+                <h2>Nature</h2>
+                <p>Discover the wonders of nature, from mysterious ecosystems to extraordinary wildlife and natural phenomena.</p>
+                <a href="./nature.html " class="category-card">Explore Nature</a>
+            </div>
+
+            <div class="category-card">
+                <h2>Technology</h2>
+                <p>Stay updated on cutting-edge technology, innovations, and the impact of tech on our daily lives.</p>
+                <a href="./technology.html" class="category-card">Explore Tech</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Fact Flow. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
