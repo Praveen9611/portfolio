@@ -9,6 +9,57 @@
     font-family: 'Open Sans', sans-serif;
     /* border: solid red 2px; */
 }
+/* cursor  */
+#main{
+    height: 100%;
+    width: 100%;
+}
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    mix-blend-mode: difference;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(0, 0);
+    transition: transform 0.1s ease, opacity 0.2s ease;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-burst {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: orange;
+    opacity: 0;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.cursor-burst.animate {
+    animation: wave 0.4s ease-out forwards;
+}
+
+@keyframes wave {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+
 html{
     scroll-behavior: smooth;
 }

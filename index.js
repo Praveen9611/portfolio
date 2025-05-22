@@ -1,3 +1,34 @@
+// cursor
+const crsr = document.querySelector(".cursor");
+
+// Create the burst element inside the cursor
+const burst = document.createElement("div");
+burst.classList.add("cursor-burst");
+crsr.appendChild(burst);
+
+// Move the cursor with the mouse
+document.addEventListener("mousemove", function (e) {
+    crsr.style.transform = `translate(${e.clientX}px, ${e.clientY}px)`;
+    crsr.style.opacity = "1";
+});
+
+// Hide cursor when mouse leaves
+document.addEventListener("mouseout", function (e) {
+    if (!e.relatedTarget && !e.toElement) {
+        crsr.style.opacity = "0";
+    }
+});
+document.addEventListener("mouseover", function () {
+    crsr.style.opacity = "1";
+});
+
+// Click burst effect
+document.addEventListener("mousedown", function () {
+    burst.classList.remove("animate"); // Reset if already active
+    void burst.offsetWidth; // Force reflow
+    burst.classList.add("animate");
+});
+
 window.addEventListener('scroll', function () {
         const nav = document.querySelector('nav');              // get the nav element
         const homeSection = document.getElementById('profiles'); // get the HOME section
@@ -23,3 +54,5 @@ window.addEventListener('scroll', function () {
     container.style.display = 'block'; // Show iframe
     image.style.display = 'none'; // Hide the image after clicking
   });
+
+
